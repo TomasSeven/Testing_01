@@ -41,8 +41,7 @@ fetch(`${myApiUrl}/${usersPath}`, {
 })
 */
 
-fetch(
-  "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=1min&apikey=XXXX"
+fetch('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=1min&apikey=XXXX'
 )
   .then(function(response) {
     if (response.status !== 200) {
